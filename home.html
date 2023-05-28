@@ -1,0 +1,128 @@
+<html>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+       hulu bus
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">hulu</a></div>
+        <ul class="menu">
+            
+            <li><a href="home.html">home</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="buses.html">Buses</li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+        
+        <div class="menu-b">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+      
+            
+        </div>
+        </div>
+    </nav>
+       <!--home section start-->
+        <section class="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <form  method="get">
+                <input type ="text" placeholder="from" id="from" name="from">
+                <input type ="text" placeholder="to" id="to" name="to">
+                <input type ="date" placeholder="departure date" id="to" name="departuredate">
+                <button type="submit" id="search" neme="search">search</button>
+                    </form>
+            </div>
+            </div>
+        </section>
+        </section>
+        <!--available buses section-->
+        <section class="avilable buses">
+            <div class="max-width">
+              <h3 class="titles">Available buses</h3>
+           </div>
+           <div >
+           <a href="a.a">
+            <div class="listsofbuses">
+                <div id="left">
+                <img src="images/Golden-Bus.jpg" alt="img not found" width="350" height="300" class="imgborder">
+                </div>
+                <div id="right">
+                <h2>Golden bus</h2>
+                </div>
+                </div>
+                </a>
+
+                </div>
+            <div >
+                 <a href="a.a">
+                     <div class="listsofbuses">
+                         <div id="left">
+                         <img src="images/Habesha-Bus-Ethiopia.jpg" alt="img not found" width="350" height="300" class="imgborder">
+                         </div>
+                         <div id="right">
+                         <h2>hebesha bus</h2>
+                         </div>
+                         </div>
+                         </a>
+         
+                </div>
+                <div >
+                    <a href="a.a">
+                        <div class="listsofbuses">
+                            <div id="left">
+                            <img src="images/walia.webp" alt="img not found" width="350" height="300" class="imgborder">
+                            </div>
+                            <div id="right">
+                            <h2>Walia bus</h2>
+                            </div>
+                            </div>
+                            </a>
+            
+                   </div>          
+                   <div >
+                    <a href="a.a">
+                        <div class="listsofbuses">
+                            <div id="left">
+                            <img src="images/Abay-Bus-Ethiopia.jpg" alt="img not found" width="350" height="300" class="imgborder">
+                            </div>
+                            <div id="right">
+                            <h2>Abay bus</h2>
+                            </div>
+                            </div>
+                            </a>
+            
+                   </div>                                
+        </section>
+    
+
+        
+
+
+<!--footer -->
+
+
+<script>
+    navEL = document.querySelector('.navbar');
+    window.addEventListener('scroll',()=> {
+        if (window.scrollY >= 56){
+            navEL.classList.add('navbarscroled');
+        }else if (window.scrollY < 56){
+            navEL.classList.remove('navbarscroled');
+        }
+    });
+    </script>
+
+</body>
+
+    </html>
